@@ -1,0 +1,97 @@
+<patTemplate:tmpl name="addform">
+
+	<script language="JavaScript1.2">
+	<!--
+	function lookup() {
+		artistfield=document.forms["form2"].elements["artist"].value;
+		titlefield=document.forms["form2"].elements["title"].value;
+		if (titlefield == "") {
+			window.alert("{LANG_ADD_CDDB1}");
+		} else {
+			cddb_url = "http://www.cddb.com/php/search1.php3?f=artist&f=track&q="+artistfield+" "+titlefield+"&image=Search";
+			window.open(cddb_url, "{LANG_ADD_CDDBWINDOWTITLE}", "width=740,height=360,scrollbars");
+		}
+	}
+	// -->
+	</script>
+
+	 <form name="form2" method="post" action="add2.php">
+		<div align="left"></div>
+		<table width="86%" border="0" cellspacing="0" cellpadding="0" align="center">
+		  <tr>
+		    <td width="85%" height="60">
+		      <div align="left">
+			<p align="center"><font face="Verdana, Arial, Helvetica, sans-serif">
+				<b>{LANG_ADD_SHORTINFO}</b></font></p>
+		      </div>
+		    </td>
+		  </tr>
+		</table>
+		<br>
+		<table width="86%" border="0" cellspacing="3" cellpadding="4" align="center">
+		  <tr bgcolor="#003366">
+		    <td width="24%" nowrap>
+		      <div align="right"><i>{LANG_ARTIST}</i></div>
+		    </td>
+		    <td width="76%">
+		      <input type="text" name="artist" size="60" maxlength="60">
+		    </td>
+		  </tr>
+		  <tr bgcolor="#003366">
+		    <td width="24%" nowrap>
+		      <div align="right"><i>{LANG_TITLE}</i></div>
+		    </td>
+		    <td width="76%">
+		      <input type="text" name="title" size="60" maxlength="60">
+		    </td>
+		  </tr>
+		  <tr bgcolor="#003366">
+		    <td width="24%" nowrap height="25">
+		      <div align="right"><i>{LANG_ALBUM}</i></div>
+		    </td>
+		    <td width="76%" height="25">
+		      <input type="text" name="album" size="60" maxlength="60">
+		      <a href="javascript:lookup()"><i>CDDB</i></a></td>
+		  </tr>
+		  <tr bgcolor="#003366">
+		    <td width="24%" nowrap>
+		      <div align="right"><i>{LANG_ADDED_BY}</i></div>
+		    </td>
+		    <td width="76%">
+			{USERNAME}
+			 <input type="hidden" name="addedby" value="{USERNAME}">
+		    </td>
+		  </tr>
+		  <tr bgcolor="#003366">
+		    <td width="24%" height="34" nowrap>
+		      <div align="right"><i>Type</i></div>
+		    </td>
+		    <td width="76%" height="34"><i>
+		      <input type="radio" name="type" value="1" checked>
+		      </i> <b>Lyrics<b><i>
+		      <input type="radio" name="type" value="2">
+		      </i><b>Chords <i>
+		      <input type="radio" name="type" value="3">
+		      </i> <b>Tab</b><i>
+		      <input type="radio" name="type" value="4">
+		      </i><b>Bass Tab</b></b></b></b></td>
+		  </tr>
+		  <tr bgcolor="#003366">
+		    <td width="24%" valign="top" nowrap>
+		      <div align="right"><i><br>
+			Content</i></div>
+		    </td>
+		    <td width="76%"> <br>
+		      <textarea name="content" rows="20" cols="80" wrap="HARD"></textarea>
+		    </td>
+		  </tr>
+		  <tr bgcolor="#003366">
+		    <td width="24%" valign="top" nowrap>&nbsp;</td>
+		    <td width="76%">
+		      <input type="submit" name="Submit2" value="Submit">
+		      <input type="hidden" name="mode2" value="manual">
+		    </td>
+		  </tr>
+		</table>
+	      </form>
+</patTemplate:tmpl>

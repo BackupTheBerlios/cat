@@ -1,0 +1,36 @@
+<patTemplate:tmpl name="staff">
+	<br>
+	<div align="center" style="color:#CCCC99; font-family:Verdana,Helvetica,sans-serif; font-size:30px; font-weight:bold">
+		{LANG_STAFF}
+	</div>
+	<hr size="1">
+	{STAFFENTRIES}
+</patTemplate:tmpl>
+
+<patTemplate:tmpl name="staffentry">
+	 <table width="100%" border="0" cellspacing="0" cellpadding="0" height="192">
+		<tr>
+			 <td height="72" width="14%">
+				 &nbsp;
+			</td>
+			 <td height="72" width="41%">
+				 <p align="center">
+					<a href="{PROFILE}">
+						<img src="{IMAGE}" alt="{NAME}" width="{X}" height="{Y}">
+					</a>
+				</p>
+			</td>
+			<td height="72" width="45%">
+				<p style="font-family:Verdana,Helvetica,sans-serif; font-size:30px; font-style:italic; font-weight:bold;">
+					<a href="{PROFILE}">
+					{NAME}
+					</a>
+				</p>
+				<p style="font-family:Verdana,Helvetica,sans-serif; font-style:italic; font-weight:bold;">
+					{FUNCTIONS}
+				</p>
+			</td>
+		</tr>
+	</table>
+	<hr size="1">
+</patTemplate:tmpl>

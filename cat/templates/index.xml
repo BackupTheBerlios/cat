@@ -1,0 +1,40 @@
+<patTemplate:tmpl name="index">
+	<table width="100%" border="0" cellspacing="2" cellpadding="2" align="center">
+		<tr>
+			<td width="180" height="76" bgcolor="#003060" valign="top">
+				<h4 align="center"><br>
+					Are you a new user?
+					<a href="register.php">
+						Register here
+					</a>
+				</h4>
+				<hr>
+				<h4 align="center">
+					View the latest files on the
+					<a href="stats.php">
+						Statistics Page
+					</a>
+				</h4>
+				<hr>
+				<h4 align="center">
+					Database Statistics:<br>
+					(...)<br>
+					(...)<br>
+					(...)<br>
+				</h4>
+			</td>
+			<td width="561" height="76" valign="top">
+				<div align="center"> <font face="Verdana, Arial, Helvetica, sans-serif"><b><font size="4"><br>
+					<font size="6"> News</font></font></b></font> <br>
+					<font face="Verdana, Arial, Helvetica, sans-serif"><b> </b></font>
+					<hr size="1" width="90%">
+					{NEWS}
+					<br>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" height="5"><img height="1" width="179" src="/images/spacer.gif"></td>
+		</tr>
+	</table>
+</patTemplate:tmpl>

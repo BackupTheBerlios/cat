@@ -1,0 +1,22 @@
+#CAT main server configuration directives
+#last updated Sun 2001-11-11 Sky
+
+#Error documents
+ErrorDocument 400 /errordocs/400.php
+ErrorDocument 401 /errordocs/401.php
+ErrorDocument 402 /errordocs/402.php
+ErrorDocument 403 /errordocs/403.php
+ErrorDocument 404 /errordocs/404.php
+ErrorDocument 500 /errordocs/500.php
+ErrorDocument 501 /errordocs/501.php
+ErrorDocument 502 /errordocs/502.php
+ErrorDocument 503 /errordocs/503.php
+
+#Rewrite rules
+RewriteEngine On
+Options +FollowSymlinks
+
+RewriteBase /
+RewriteRule ^(.*)files/([0-9]{1,1}|lyrics|chords|tabs|btabs)/([0-9]+)$ en/display.php?type=$2&id=$3
+RewriteRule ^(.*)search/(.*)$  en/search.php?$2
+RewriteRule ^(.*)files/(.*)$ $2 [R]

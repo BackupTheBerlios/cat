@@ -1,0 +1,10 @@
+<patTemplate:tmpl name="input">
+
+	<form action="{PHP_SELF}" method="GET">
+		<input type="hidden" name="check" value=1>
+		<p>Name:<input type="text" name="username"></p><br>
+		<p>Eintrag:<textarea name="comment" rows="20" cols="80" wrap="HARD"></textarea></p><br>
+		<input type="submit" value="Submit">
+	</form>
+
+</patTemplate:tmpl>

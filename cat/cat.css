@@ -1,0 +1,108 @@
+/* global style */
+body {
+  font-family:Times;
+  font-size:11px;
+  color:#FFFFFF;
+  background-color:#2222BB;
+  background-image:URL(../images/back3.jpg);
+}
+
+/* heading */
+.heading {
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  font-size:21px;
+  font-weight:bold;
+  text-decoration:none;
+  color:#AAAACC;
+  text-align:center;
+}
+
+/* useronline display */
+.uodisplay {
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  font-size:13px;
+  color:#FFFFFF;
+  font-style: italic;
+  text-align:center;
+}
+
+/* style of quicksearch description font */
+.searchdisplay {
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  font-size:13px;
+  font-weight: bold;
+  color:#FFFFFF;
+  text-align:center;
+  vertical-align:middle;
+}
+
+.statusdisplay {
+  font-family: Times;
+  font-size:13px;
+  font-style: italic;
+  color:#FFFFFF;
+  text-align:center;
+  vertical-align:middle;
+}
+
+/* navigation default style */
+.nav {
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+  font-size:15px;
+  font-weight:bold;
+  color:#BBBBEE;
+  text-align:center;
+  vertical-align:middle;
+}
+
+/* for display.php */
+a:.fileinfo:link {
+  text-decoration:none;
+  color:#FFFFFF;
+}
+
+a.fileinfo:hover {
+  text-decoration:none;
+  color:#FFAA33;
+}
+
+a.fileinfo:visited {
+  text-decoration:none;
+  color:#FFFFFF;
+}
+
+/* album/artist info links in tables */
+a:.lowpriority:link {
+  text-decoration:underline;
+  font-weight:normal;
+  color:#FFFFFF;
+}
+
+a.lowpriority:hover {
+  text-decoration:none;
+  font-weight:normal;
+  color:#EEEEEE;
+}
+
+a.lowpriority:visited {
+  text-decoration:underline;
+  font-weight:normal;
+  color:#FFFFFF;
+}
+
+/* default links */
+a:link {
+  text-decoration:underline;
+  font-weight:bold;
+  color:#FFCC66;
+}
+
+a:hover {
+  text-decoration:none;
+  color:#FFAA33;
+}
+
+a:visited {
+  text-decoration:underline;
+  color:#FFCC66;
+}

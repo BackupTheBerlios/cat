@@ -1,0 +1,30 @@
+<patTemplate:tmpl name="display">
+	<br>
+	<table width="750" border="0" cellspacing="0" cellpadding="0" align="center">
+		<tr>
+			<td valign="top">
+				<h1>
+				<font size="4" color="#FFFFFF">{ARTIST}</font>
+				<font color="#FFFFFF"><br>{TITLE}<br></font>
+				<i>
+					<font size="2" color="#FFFFFF">
+						<a class="fileinfo" href="info.php?what=album&amp;artist={ARTIST_URL}&amp;album={ALBUM_URL}">{ALBUM}</a>
+					</font>
+					<hr height=1 width=250 align=left>
+				</i>
+				</h1>
+				<p>
+					{CONTENTFONT}
+						{CONTENT}
+					</font>
+				</p>
+				<br>
+				<hr height=1 width=250 align=left><font size="2">
+				{LANG_ADDEDBY} {ADDEDBY}<br>
+				<font size="2">{LANG_DISPLAY_VIEWCOUNTER}
+				<hr height="1" width="250" align="left">
+				<a href="displaypf.php?id={ID}&type={TYPE}" target="_blank">{LANG_DISPLAY_PRINTVERSION}</a>
+			</td>
+		</tr>
+	</table>
+</patTemplate:tmpl>

@@ -1,0 +1,2 @@
+www.nuus.de user: p8309344 pass: peter01;
+admin.php user: sky pass: auto

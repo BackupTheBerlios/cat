@@ -1,0 +1,111 @@
+<patTemplate:tmpl name="basic">
+	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+
+	<html>
+	<head>
+
+		<title>
+			CAT Music Files - {PAGETITLE}
+		</title>
+
+		<!-- META tags for general information and search engine robots -->
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<meta http-equiv="Content-Language" content="en">
+		<meta name="description" content="Your central source for lyrics, guitar tabs, chords and bass tabs. Free.">
+		<meta name="abstract" content="Your central source for lyrics, guitar tabs, chords and bass tabs. Free.">
+		<meta name="author" content="Patrick L. Polzer">
+		<meta name="keywords" content="Music,MP3,Song Lyrics,Tab,Tabs,Lyrics,Chords,Bass,Guitar,Free,Entertainment,Metallica,Manowar,Iron Maiden,Creed,Ozzy,Van halen,Bon jovi,Red Hot Chili Peppers">
+		<meta name="robots" content="index,follow">
+		<meta name="revisit-after" content="3 days">
+		<!-- META end -->
+
+		<!-- Favicon information -->
+		<link rel="shortcut icon" HREF="http://lyrics.nachtwind.net/favicon.ico">
+		<!-- FAVICON end -->
+
+		<link rel="stylesheet" type="text/css" href="cat.css">
+
+	</head>
+
+	<body>
+		  <table width="750" border="0" cellspacing="0" cellpadding="0" align="center">
+			<tr>
+			  <td height="48" valign="middle" width="201" align="middle">
+				  <a href="http://lyrics.nachtwind.net/">
+					<img src="images/cat2small.gif" width="100" height="48" border="0" align="middle" alt="CAT Logo">
+				  </a>
+			  </td>
+			  <td height="48" valign="middle" align="middle" width="549">
+				<a class="heading" href="http://lyrics.nachtwind.net/">CAT MUSIC FILES</a>
+				<br>
+				<span class="uodisplay">
+				<span style="font-weight:bold;">{LANG_USERSONLINE}</span>
+					{USERSONLINE}
+				</span>
+			   </td>
+			 </tr>
+		  </table>
+
+		  <table width="750" cellspacing="0" cellpadding="0" align="center">
+			<tr>
+			  <td height="351" valign="top">
+				  <img src="images/divider3.gif" width="100%" height="15" alt="Divider">
+
+				  <table width="750" border="0" cellspacing="0" cellpadding="0" align="center">
+					<tr align="left" valign="middle">
+					  <td height="106" width="157" align="center">
+						<form name="form1" method="GET" action="search.php">
+							<span class="searchdisplay">{LANG_QUICKSEARCH}</span><br>
+							<input type="text" name="quickquerystring" maxlength="60" size="15"><br>
+							 <input type="hidden" name="mode" value="quick">
+							 <input type="hidden" name="s_lyrics" value="yes">
+							 <input type="hidden" name="s_tabs" value="yes">
+							 <input type="hidden" name="s_chords" value="yes">
+							 <input type="hidden" name="s_btabs" value="yes">
+						</form>
+
+						<span class="statusdisplay">{USERNAME}</span>
+
+					  <td height="106" width="594">
+						<table width="100%" cellspacing="3" cellpadding="1" align="center">
+						  <tr>
+							<td align="center">
+							<span class="nav">
+							<a href="stdsearch.php">{LANG_EXTENDEDSEARCH}</a> &bull;
+							<a href="artistbrowse.php">{LANG_ARTISTBROWSE}</a> &bull;
+							<a href="add.php">{LANG_ADDLYRICS}</a>
+							</span>
+						  <tr>
+							<td align="center">
+							<span class="nav">
+							<a href="mypage.php">{LANG_PREFERENCES}</a> &bull;
+							<a href="staff.php">{LANG_STAFF}</a> &bull;
+							<a href="stats.php">{LANG_STATISTICS}</a>
+							</span>
+						</table>
+				  </table>
+				<img src="images/divider3.gif" width="100%" height="15" alt="Divider">
+
+				<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+				  <tr valign="middle">
+					<td height="19"> 
+
+				  <tr>
+					<td valign="top" width="80%" height="216">
+						{PAGECONTENT}
+					</td>
+				</tr>
+				</table>
+			  </td>
+			</tr>
+		  </table>
+		</div>
+		</body>
+		</html>
+</patTemplate:tmpl>
+
+
+<patTemplate:tmpl name="error">
+<p  style="font-style: italic; font-weight: bold; font-color: red; font-size: 25px; text-align: center;">{ERROR}</p>
+</patTemplate:tmpl>
