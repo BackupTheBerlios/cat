@@ -1,0 +1,17 @@
+back color: #003366
+back image: images/back3.jpg
+table border color: #006600
+font color: #CCCCCC
+link color: #3333CC
+visited link color: <default>
+default resolution: 800x600
+recommended browsers: opera 5+, ie5+
+languages: english, german(, french)
+content language: english
+ikonboard license number: 991490010
+
+http://azure.phpwebhosting.com
+username: scripteaze
+pass: godlike
+
+meta tags: tab, tabs, lyrics, chords, bass, guitar, metallica, manowar, iron maiden, creed, ozzy, van halen, bon jovi, red hot chili peppers

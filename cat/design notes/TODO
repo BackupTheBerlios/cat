@@ -1,0 +1,32 @@
+external search:
+- google
+- olga
+
+- direct hit - direct display (optional)
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!! - adapt admin.php to new artist/album tables !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+(- special artist/album editor)
+- implement bookmarks
+- implement logout
+- implement request list
+- global style options in css
+- COMPLETE german translation
+- convert all select *
+- update all inserts to set-syntax
+- convert mysql-functions to db_mysql.inc.php
+- convert print() et al to echo
+- review db-design (optimize field formats)
+- make addedby field linked to user table
+- move artists to extra table
+- make column headers clickable for sort order
+- redesign admin options in display.php
+- integrate template into admin.php
+- move styles for admin options into cat.css
+- make album info grabber smarter
+- cache album info
+- clean up HTML
+- cron: backup, optimize tables, correct num_submitted
+- cache album covers
